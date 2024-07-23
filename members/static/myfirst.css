@@ -13,13 +13,14 @@ body {
     color: cadetblue;
     font-size: 17px;
     font-weight: bolder;
-    flex-direction: column;
-    line-height: 40px;
+    flex-direction: row;
+    flex-wrap: nowrap;
 }
 
 li {
     list-style-type: number;
     text-transform: capitalize;
+    margin: 10px 0;
 
 }
 
@@ -29,4 +30,19 @@ li a {
 }
 li a:hover {
     color: brown;
+}
+.user {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    margin-left: 20px;
+}
+.user form input, button {
+    width: 100%;
+    padding: 5px;
+    background: none;
+    border: 1px solid cadetblue;
+    cursor: pointer;
+    margin: 10px 0;
+
 }
