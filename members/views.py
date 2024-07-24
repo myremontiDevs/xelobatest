@@ -36,3 +36,9 @@ def add(request):
         'mymembers': members
     }
     return HttpResponse(template.render(context, request))
+
+
+def home(request):
+    template = loader.get_template('/')
+    
+    return HttpResponse(template.render(request))
